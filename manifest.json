@@ -1,29 +1,23 @@
 {
-  "name": "Harita Sosyal",
+  "name": "Enment - Festival Sosyal Harita",
   "short_name": "Enment",
-  "start_url": "/",
+  "id": "com.enment.app",
+  "description": "Festival ruhunu taşıyan sosyal harita uygulaması. Etkinlikleri keşfet, paylaş ve katıl!",
+  "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
+  "display_override": ["fullscreen", "minimal-ui"],
   "background_color": "#ffffff",
-  "theme_color": "#2196f3",
-  "description": "Festival temalı sosyal harita uygulaması",
+  "theme_color": "#6a0dad",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "lang": "tr",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
-    },
-    {
-      "src": "/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
-    "icons": [
-  {
-    "src": "icons/icon-192.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  }
-]
-  ]
+  ],
+  "categories": ["social", "events", "lifestyle"]
 }
