@@ -19,5 +19,15 @@
       "type": "image/png"
     }
   ],
-  "categories": ["social", "events", "lifestyle"]
+  "categories": ["social", "events", "lifestyle"],
+  "share_target": {
+    "action": "/events.html",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }

@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enment</title>
-
-  <!-- Manifest -->
-  <link rel="manifest" href="manifest.json" />
-
-  <!-- Tema rengi -->
-  <meta name="theme-color" content="#2196f3" />
-
-  <!-- İkonlar -->
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enment - Festival Sosyal Harita</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <h1>Enment'e Hoş Geldin</h1>
+  <h1>Enment - Festival Sosyal Harita</h1>
 
+  <!-- Kayıt Formu -->
+  <h2>Kayıt Ol</h2>
   <form id="registerForm">
-    <input type="text" name="username" placeholder="Kullanıcı Adı" required />
-    <input type="password" name="password" placeholder="Şifre" required />
+    <label for="reg-username">Kullanıcı Adı:</label>
+    <input type="text" id="reg-username" name="username" required>
+    <br>
+    <label for="reg-password">Şifre:</label>
+    <input type="password" id="reg-password" name="password" required>
+    <br>
     <button type="submit">Kayıt Ol</button>
   </form>
 
+  <!-- Giriş Formu -->
+  <h2>Giriş Yap</h2>
+  <form id="loginForm">
+    <label for="login-username">Kullanıcı Adı:</label>
+    <input type="text" id="login-username" name="username" required>
+    <br>
+    <label for="login-password">Şifre:</label>
+    <input type="password" id="login-password" name="password" required>
+    <br>
+    <button type="submit">Giriş Yap</button>
+  </form>
+
+  <!-- Etkinlik Oluşturma Formu -->
+  <h2>Etkinlik Oluştur</h2>
+  <form id="eventForm">
+    <label for="event-title">Etkinlik Başlığı:</label>
+    <input type="text" id="event-title" name="title" required>
+    <br>
+    <label for="event-date">Tarih:</label>
+    <input type="date" id="event-date" name="date" required>
+    <br>
+    <label for="event-location">Konum:</label>
+    <input type="text" id="event-location" name="location" required>
+    <br>
+    <label for="event-description">Açıklama:</label>
+    <textarea id="event-description" name="description"></textarea>
+    <br>
+    <button type="submit">Etkinlik Oluştur</button>
+  </form>
+
+  <!-- JS dosyanı bağla -->
   <script src="app.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/service-worker.js")
-        .then(() => console.log("Service Worker registered"));
-    }
-  </script>
 </body>
 </html>
